@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- htmlaunch:enhanced:v2 -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22hsl(215%2C72%25%2C58%25)%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22hsl(245%2C72%25%2C44%25)%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2246%22%20text-anchor%3D%22middle%22%20font-family%3D%22ui-sans-serif%2Csystem-ui%2C-apple-system%2CSegoe%20UI%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20fill%3D%22%23ffffff%22%3EL%3C%2Ftext%3E%3C%2Fsvg%3E">
+<meta name="theme-color" content="#147b5f">
+<meta name="description" content="Our Little World ❤️ | deployed with HTMLaunch">
+<link rel="canonical" href="https://SayyedHaris.github.io/our-little-world/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Our Little World ❤️">
+<meta property="og:title" content="Our Little World ❤️">
+<meta property="og:description" content="Our Little World ❤️ | deployed with HTMLaunch">
+<meta property="og:url" content="https://SayyedHaris.github.io/our-little-world/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2FSayyedHaris.github.io%2Four-little-world%2F?w=1200&h=630">
+<meta property="og:image:alt" content="Our Little World ❤️">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Our Little World ❤️">
+<meta name="twitter:description" content="Our Little World ❤️ | deployed with HTMLaunch">
+<meta name="twitter:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2FSayyedHaris.github.io%2Four-little-world%2F?w=1200&h=630">
+<meta name="twitter:image:alt" content="Our Little World ❤️">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Little World ❤️</title>
+<style>
+:root{--pink:#ff6f9f;--pink2:#ff9dbb;--cream:#fff0e8;--bg:#070811;--panel:#100d1b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at top,#24112f 0%,#0b0a16 45%,#05060b 100%);color:#fff;font-family:Georgia,'Trebuchet MS',sans-serif;overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.heart{position:absolute;bottom:-40px;color:#ff77a8;opacity:.45;animation:floatUp linear infinite}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+.wrap{position:relative;z-index:1;max-width:850px;margin:auto;padding:22px 16px 42px}
+.topline{text-align:center;color:#ffabc4;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;margin:5px 0 20px}
+.progress{height:4px;background:#342034;border-radius:10px;overflow:hidden;margin:0 auto 22px;max-width:420px}
+.progress span{display:block;height:100%;width:8.333%;background:linear-gradient(90deg,#ff6f9f,#ffc1d3);transition:width .4s}
+.card{display:none;min-height:66vh;border:1px solid #563049;border-radius:22px;background:linear-gradient(145deg,rgba(20,12,30,.96),rgba(5,7,15,.97));box-shadow:0 20px 70px #0008;padding:clamp(22px,5vw,48px);text-align:center;position:relative;overflow:hidden;align-items:center;justify-content:center;flex-direction:column}
+.card.active{display:flex;animation:appear .5s ease both}
+@keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 10%,#ff77a811,transparent 32%),radial-gradient(circle at 90% 85%,#8b65ff12,transparent 35%);pointer-events:none}
+.card>*{position:relative}
+.eyebrow{font-size:.8rem;letter-spacing:.17em;text-transform:uppercase;color:#ff9dbb;margin-bottom:12px}
+h1,h2{margin:.2em 0 .45em;line-height:1.12}
+h1{font-size:clamp(2.4rem,9vw,5rem);font-weight:400;font-style:italic;color:#ffd5e1;text-shadow:0 0 30px #ff7baa55}
+h2{font-size:clamp(1.8rem,6vw,3rem);font-weight:400;color:#ffd3e0;font-style:italic}
+p{font-family:'Trebuchet MS',Arial,sans-serif;line-height:1.75;color:#f4eaf2;max-width:570px;margin:10px auto}
+.sub{color:#d6c7d9;font-size:.98rem}
+.bigheart{font-size:3.4rem;animation:pulse 1.4s infinite;filter:drop-shadow(0 0 18px #ff4f93)}
+@keyframes pulse{50%{transform:scale(1.13)}}
+.btn{border:1px solid #ff9cba;background:linear-gradient(135deg,#ff7da6,#ffb1c8);color:#28101e;border-radius:999px;padding:13px 24px;margin:20px 5px 0;font-weight:bold;box-shadow:0 6px 25px #ff5d9633;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 32px #ff5d9666}
+.btn.secondary{background:transparent;color:#ffd9e4;border-color:#a85b7d}
+.tag{display:inline-block;padding:8px 13px;margin:5px;border:1px solid #60334f;border-radius:999px;color:#ffd5e1;background:#1b1020;font-size:.88rem}
+.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;width:100%;max-width:580px;margin:18px auto}
+.photo-slot{background:#1b1321;border:1px dashed #a95e7d;border-radius:13px;min-height:155px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px;color:#ffc5d7;overflow:hidden}
+.photo-slot img{width:100%;height:180px;object-fit:cover;border-radius:8px;display:block;margin-bottom:8px}
+.photo-slot label{font-size:.82rem;cursor:pointer;text-decoration:underline}
+.photo-slot input{max-width:100%;font-size:.75rem;margin-top:7px}
+.photo-slot .placeholder{font-size:2rem;margin-bottom:6px}
+.reasons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:100%;max-width:580px;margin:16px auto}
+.reason{border:1px solid #63334f;background:#170e1b;border-radius:13px;padding:16px 10px;color:#ffcfdd}
+.reason b{display:block;font-size:1rem;margin:8px 0;color:#fff}
+.letter{background:#fff0df;color:#4a2532;border-radius:7px;padding:24px;max-width:570px;box-shadow:0 10px 25px #0005;transform:rotate(-1deg);font-family:Georgia,serif;text-align:left;line-height:1.8}
+.letter p{color:#4a2532;font-family:Georgia,serif}
+.dreams{display:grid;gap:12px;text-align:left;margin:20px auto;max-width:480px}
+.dreams div{padding:12px 16px;border-radius:12px;background:#ffffff0a;border:1px solid #ffffff16}
+.dreams span{color:#ff9dbb;margin-right:10px}
+.quote{font-size:clamp(1.15rem,4vw,1.55rem);font-style:italic;color:#ffd7e3}
+.final{font-size:clamp(2rem,8vw,4rem);font-style:italic;line-height:1.2;color:#ffd7e3}
+.small{font-size:.83rem;color:#b8a8bb}
+footer{text-align:center;color:#9f8ea6;font-size:.78rem;padding:20px 8px 0;line-height:1.7}
+@media(max-width:520px){.card{min-height:72vh;padding:23px 16px}.photo-grid,.reasons{grid-template-columns:1fr}.photo-slot img{height:220px}.wrap{padding:15px 10px 30px}.topline{font-size:.68rem}}
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts"></div>
+<main class="wrap">
+  <div class="topline">A little surprise, made with love ♡</div>
+  <div class="progress"><span id="progress"></span></div>
+
+  <section class="card active" data-title="Welcome">
+    <div class="eyebrow">For my favourite person</div>
+    <div class="bigheart">♡</div>
+    <h1>Our Little World</h1>
+    <p>A journey of us…<br>full of love, laughter and forever.</p>
+    <p class="sub">Meri jaan, ye chhoti si website sirf tumhare liye hai. ❤️</p>
+    <button class="btn" onclick="next()">Tap to Begin ♥</button>
+    <div class="small">Made with ♡ just for you</div>
+  </section>
+
+  <section class="card" data-title="Special Message">
+    <div class="eyebrow">Moment 02 · Just us</div><div class="bigheart">♥</div>
+    <h2>Hey meri jaan!</h2>
+    <p>Is chhoti si website ke through main tumhe yaad dilana chahta hoon ki tum sirf meri partner nahi, meri sabse badi khushi ho.</p>
+    <p class="quote">Tum ho, toh sab kuch thoda aur khoobsurat hai. ❤️</p>
+    <button class="btn" onclick="next()">Tap to Continue →</button>
+  </section>
+
+  <section class="card" data-title="Our Beginning">
+    <div class="eyebrow">Moment 03 · The beginning</div><h2>It all began with you</h2>
+    <div class="photo-grid">
+      <div class="photo-slot"><div class="placeholder">📷</div><b>Our beginning</b><p class="small">Yahan apni first / favourite photo add karo</p><label>Choose photo<input type="file" accept="image/*" onchange="previewPhoto(this)"></label></div>
+      <div class="photo-slot"><div class="placeholder">💌</div><p>“Pata nahi tha ki ek insaan meri duniya itni special bana dega.”</p></div>
+    </div>
+    <button class="btn" onclick="next()">Next →</button>
+  </section>
+
+  <section class="card" data-title="Our Memories">
+    <div class="eyebrow">Moment 04 · Little memories</div><h2>Our Memories</h2>
+    <p>Har photo ke peeche ek kahani hai… aur har kahani mein tum ho. ❤️</p>
+    <div class="photo-grid">
+      <div class="photo-slot"><div class="placeholder">📸</div><b>My favourite person</b><label>Add photo<input type="file" accept="image/*" onchange="previewPhoto(this)"></label></div>
+      <div class="photo-slot"><div class="placeholder">🌅</div><b>A moment to remember</b><label>Add photo<input type="file" accept="image/*" onchange="previewPhoto(this)"></label></div>
+    </div>
+    <button class="btn" onclick="next()">Next →</button>
+  </section>
+
+  <section class="card" data-title="Things I Love">
+    <div class="eyebrow">Moment 05 · Six little reasons</div><h2>Things I Love About You ♥</h2>
+    <div class="reasons">
+      <div class="reason">☺<b>Your Smile</b><span class="small">Jo mera din roshan kar deti hai.</span></div>
+      <div class="reason">♡<b>Your Care</b><span class="small">Tumhara har chhota effort mere liye special hai.</span></div>
+      <div class="reason">☆<b>Your Support</b><span class="small">Mushkil waqt mein mere saath khade rehna.</span></div>
+      <div class="reason">✿<b>Your Cuteness</b><span class="small">Tumhari adayein sabse alag hain.</span></div>
+      <div class="reason">♥<b>Your Heart</b><span class="small">Tumhara dil bahut khoobsurat hai.</span></div>
+      <div class="reason">∞<b>Simply You</b><span class="small">Tum bas tum ho… and that's everything.</span></div>
+    </div>
+    <button class="btn" onclick="next()">Next →</button>
+  </section>
+
+  <section class="card" data-title="Love Letter">
+    <div class="eyebrow">Moment 06 · From my heart</div><h2>A Letter For You</h2>
+    <div class="letter">
+      <p><b>My Love,</b></p>
+      <p>Tum meri life ki sabse khoobsurat cheez ho. Tumhare bina sab kuch adhura sa lagta hai. Tum ho toh har din, har mushkil, har sapna kuch aur hi ban jaata hai.</p>
+      <p>Thank you meri zindagi mein hamesha rehne ke liye, mujhe samajhne ke liye aur mera saath dene ke liye.</p>
+      <p><i>I love you… always. ❤️</i></p>
+      <p style="text-align:right">— Tumhara forever</p>
+    </div>
+    <button class="btn" onclick="next()">Next →</button>
+  </section>
+
+  <section class="card" data-title="Our Future">
+    <div class="eyebrow">Moment 07 · Dreams together</div><h2>Our Dreams ♡</h2>
+    <div class="dreams">
+      <div><span>⌂</span> Apna chhota sa ghar</div>
+      <div><span>✈</span> Saath mein nayi jagah explore karna</div>
+      <div><span>♡</span> Hamare baby ki hasi se ghar bharna</div>
+      <div><span>✧</span> Ek dusre ke sapne poore karna</div>
+      <div><span>∞</span> Har haal mein saath rehna</div>
+    </div>
+    <p class="quote">No matter what… I'll always choose you. ❤️</p>
+    <button class="btn" onclick="next()">Next →</button>
+  </section>
+
+  <section class="card" data-title="Our Little One">
+    <div class="eyebrow">Moment 08 · A new chapter</div><h2>Our Little One ♡</h2>
+    <div class="bigheart">♡</div>
+    <p class="quote">Ab hamari love story mein ek naya, sabse pyaara chapter judne wala hai…</p>
+    <p>Thank you, meri jaan, itni beautiful journey ka hissa banne ke liye. Tum ek amazing mom banogi, aur main har kadam par tumhare saath hoon.</p>
+    <div class="tag">Mumma + Papa + Baby = Our little world 🥹</div>
+    <button class="btn" onclick="next()">Next →</button>
+  </section>
+
+  <section class="card" data-title="Cute Moments">
+    <div class="eyebrow">Moment 09 · The little things</div><h2>Chhoti Chhoti Baatein</h2>
+    <div class="photo-grid">
+      <div class="photo-slot"><div class="placeholder">🥰</div><b>Our silly moments</b><label>Add photo<input type="file" accept="image/*" onchange="previewPhoto(this)"></label></div>
+      <div class="photo-slot"><div class="placeholder">🤍</div><b>Our quiet moments</b><label>Add photo<input type="file" accept="image/*" onchange="previewPhoto(this)"></label></div>
+    </div>
+    <p class="quote">Badi badi khushiyon se zyada, tumhare saath ki chhoti chhoti baatein yaad rehti hain.</p>
+    <button class="btn" onclick="next()">Next →</button>
+  </section>
+
+  <section class="card" data-title="Surprise">
+    <div class="eyebrow">Moment 10 · A tiny surprise</div><div class="bigheart">🎁</div>
+    <h2>Surprise!</h2><p>Yeh kuch khaas moments hain… jo sirf tumhare liye hain.</p>
+    <button class="btn" onclick="revealSurprise(this)">Open Magic ✨</button>
+    <p id="surpriseText" class="quote" hidden>Surprise se bhi zyada precious tum ho. Thank you for being my home, my happiness, my person. ❤️</p>
+    <button class="btn secondary" onclick="next()">Continue →</button>
+  </section>
+
+  <section class="card" data-title="Anniversary">
+    <div class="eyebrow">Moment 11 · Today is about us</div><div class="bigheart">♡</div>
+    <h2>Happy Anniversary!</h2>
+    <p class="quote">Meri jaan, tumhare saath har din ek nayi khushi hai.</p>
+    <p>Aaj, kal aur hamesha… main tumhe choose karunga. I love you, more than words can say. ❤️</p>
+    <div class="tag">Today, Tomorrow & Always ♥</div>
+    <button class="btn" onclick="next()">One Last Thing →</button>
+  </section>
+
+  <section class="card" data-title="Forever">
+    <div class="eyebrow">Moment 12 · Always and forever</div>
+    <div class="final">You & Me<br>Forever ♡</div>
+    <p>Thank you for being you… aur meri duniya ko itna beautiful banane ke liye.</p>
+    <div class="bigheart">∞</div>
+    <p class="quote">Tumhara tha. Tumhara hoon. Tumhara hi rahunga. ❤️</p>
+    <button class="btn" onclick="goStart()">Back to Start ↻</button>
+  </section>
+
+  <footer>Made with love, just for you ❤️<br><span id="stepText">Moment 1 of 12</span><br><span class="small">Tip: photos choose karne ke baad website publish karne se pehle unhe website folder mein add karna hoga.</span></footer>
+</main>
+<script>
+let current=0;
+const cards=[...document.querySelectorAll('.card')];
+function show(i){current=(i+cards.length)%cards.length;cards.forEach((c,n)=>c.classList.toggle('active',n===current));document.getElementById('progress').style.width=((current+1)/cards.length*100)+'%';document.getElementById('stepText').textContent=`Moment ${current+1} of ${cards.length} · ${cards[current].dataset.title}`;window.scrollTo({top:0,behavior:'smooth'});}
+function next(){show(current+1)}
+function goStart(){show(0)}
+function revealSurprise(btn){document.getElementById('surpriseText').hidden=false;btn.textContent='Surprise opened 💖';btn.disabled=true}
+function previewPhoto(input){const file=input.files&&input.files[0];if(!file)return;const slot=input.closest('.photo-slot');let img=slot.querySelector('img');if(!img){img=document.createElement('img');slot.prepend(img)}img.src=URL.createObjectURL(file);const ph=slot.querySelector('.placeholder');if(ph)ph.style.display='none';}
+const hearts=document.getElementById('hearts');
+for(let i=0;i<22;i++){const h=document.createElement('span');h.className='heart';h.textContent=['♥','♡','✦'][i%3];h.style.left=Math.random()*100+'%';h.style.animationDuration=(9+Math.random()*13)+'s';h.style.animationDelay=(-Math.random()*18)+'s';h.style.fontSize=(12+Math.random()*22)+'px';hearts.appendChild(h)}
+</script>
+</body>
+</html>
